@@ -4,6 +4,7 @@
 
   This project aims at determining whether a person is single or not according to his/her tweets or status updates on Facebook. The expected program, as a result of project, will be for Turkish and depend on [OpenNLP Toolkit][1]. Data for the training and test will be collected by [Tweepy Python Library][2]. Data Set will contain sentences which are used with some hashtags about loneliness or togetherness.
   
+------------------------------------------------------------------------
 
   
 > ### Steps
