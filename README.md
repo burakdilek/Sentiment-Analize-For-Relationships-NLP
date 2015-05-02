@@ -11,7 +11,7 @@
 > - Scrapping data from twiter
 > - Praparing basic data set and test document
 > - Seeding data set according to tests
-> - Preparing basic program which will use OpenNLP as library.
+> - Testing on WEKA.
 > - Program is ready ;)
 
 
