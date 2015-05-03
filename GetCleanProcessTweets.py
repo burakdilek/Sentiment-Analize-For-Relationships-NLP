@@ -67,8 +67,11 @@ seslenisKelimeleri ={ 'positive' : [
     "üstadım",
     "usta",
     "mübarek",
+<<<<<<< HEAD
     "köpeğim",
     "git",
+=======
+>>>>>>> origin/master
 
 
     "sus",
@@ -87,8 +90,11 @@ sifatlar = {
     "babalık",
     "bağımsız",
     "balo",
+<<<<<<< HEAD
     "var",
     "olamaz",
+=======
+>>>>>>> origin/master
     "bar",
     "bekleyiş",
     "bellek",
@@ -518,7 +524,10 @@ sifatlar = {
     "sıkışmış",
     "sıkıntılı",
     "sığ",
+<<<<<<< HEAD
     "sübyancı",
+=======
+>>>>>>> origin/master
     "sinsi",
     "sinirli",
     "şeytani",
@@ -538,7 +547,10 @@ sifatlar = {
     "sahtekâr",
     "sahte",
     "saçma",
+<<<<<<< HEAD
     "yok",
+=======
+>>>>>>> origin/master
     "sabırsız",
     "ruhsuz",
     "rezil",
@@ -586,9 +598,13 @@ sifatlar = {
     "kayıtsız",
     "kaygılı",
     "kavgacı",
+<<<<<<< HEAD
     "Kasvetli"
     "saçmalık",
     "saçmalığa"
+=======
+    "Kasvetli",
+>>>>>>> origin/master
 ]}
 
 
@@ -620,7 +636,11 @@ def getTweets(keyword):
         cleanedData = cleanData(tweet.text)
         cleaned_Data1.writerow([cleanedData.encode("utf8")])
         finishedData = process(cleanedData)
+<<<<<<< HEAD
         finished_Data1.writerow(finishedData)
+=======
+        finished_Data1.writerow([finishedData.encode("utf8")])
+>>>>>>> origin/master
         print finishedData
 
 def cleanData(string):
@@ -636,10 +656,13 @@ def cleanData(string):
             pass
         elif i[:1] == '#':
             new_string = new_string.strip() + ' ' + i[1:]
+<<<<<<< HEAD
         elif i[:1] == "'" :
             new_string = new_string.strip() + ' ' + i[1:]
         elif i[:1] == "\"" :
             new_string = new_string.strip() + ' ' + i[1:]
+=======
+>>>>>>> origin/master
         else:
            new_string = new_string.strip() + ' ' + i
     return new_string
@@ -667,11 +690,19 @@ def process(text) :
 
 
     if grade(text) > 0 :
+<<<<<<< HEAD
         ptext = ["\""+text.encode("utf8")+"\"","Positive"]
         return ptext
 
     else:
         ntext = ["\""+text.encode("utf8")+"\"" ,"Negative"]
+=======
+        ptext = '[Positive] ['+text+']'
+        return ptext
+
+    else:
+        ntext = '[Negative] ['+text+']'
+>>>>>>> origin/master
         return ntext
 
 if __name__ == '__main__':
