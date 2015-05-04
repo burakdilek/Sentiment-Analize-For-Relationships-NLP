@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Codes are at the end of the page
 __author__ = 'HamdiBurak'
 
 import tweepy
